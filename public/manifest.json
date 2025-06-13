@@ -1,10 +1,11 @@
 {
-  "name": "My Vue App",
-  "short_name": "VueApp",
-  "start_url": ".",
+  "name": "PocketStore.io",
+  "short_name": "PocketStore",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "description": "A Vue.js 3 PWA Example",
+  "theme_color":"#1eadef",
+  "background_color": "#000",
+  "description": "PocketStore is a new Build Shop Software for smaller OnlineShops on top of PocketBase.io",
   "icons": [
     {
       "src": "/pocketstore-favicon-512x512.png",
