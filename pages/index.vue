@@ -1,111 +1,121 @@
 <template>
-  <div class="test">
-    <section class="grid grid-cols-6 gap-3">
-      <div class="col-span-6 md:col-span-3">
-        <img
-          class="w-full h-16 mb-6 mt-16"
-          src="https://www.pocketstore.io/pocketstore-logo-white.svg"
-          alt=""
-        />
-        <section class="grid grid-cols-6 gap-3 max-w-md mx-auto">
-          <div class="col-span-6 md:col-span-3">
-            <a href="" class="btn btn-block btn-primary">
-              <font-awesome-icon :icon="faGithub" />
-              <span class="text-sm">Schaue dir den Code an</span>
-            </a>
+  <section class="grid grid-cols-6 gap-3">
+    <div class="col-span-6 md:col-span-3">
+      <img
+        class="w-full h-16 mb-6 mt-16"
+        src="https://www.pocketstore.io/pocketstore-logo-white.svg"
+        alt=""
+      />
+      <section class="grid grid-cols-6 gap-3 max-w-md mx-auto">
+        <div class="col-span-6 md:col-span-3">
+          <a href="" class="btn btn-block btn-primary">
+            <font-awesome-icon :icon="faGithub" />
+            <span class="text-sm">Schaue dir den Code an</span>
+          </a>
+        </div>
+        <div class="col-span-6 md:col-span-3">
+          <a href="" class="btn btn-block btn-secondary">
+            <span>Zum Start der Doku</span>
+          </a>
+        </div>
+      </section>
+      <section class="grid grid-cols-6 gap-3 max-w-md mx-auto">
+        <div class="col-span-6 mx-auto flex mt-6">
+          <img
+            alt="GitHub forks"
+            class="mx-6"
+            src="https://img.shields.io/github/forks/pocketstore-io/demo"
+          />
+          <img
+            class="mx-6"
+            src="https://img.shields.io/github/stars/pocketstore-io/demo"
+            alt=""
+          />
+        </div>
+      </section>
+    </div>
+    <div class="col-span-6 md:col-span-3">
+      <div class="px-4 py-6 sm:pl-12 max-w-full sm:max-w-lg mx-auto">
+        <div class="flex flex-row items-center gap-x-6 mt-16 -mb-15">
+          <div
+            class="gopher w-16 h-16"
+            title="Gopher by @github:marcusolsson/gophers"
+          ></div>
+          <div class="version text-black">
+            PocketStore Version: <span class="text-white">v0.0.5</span>
           </div>
-          <div class="col-span-6 md:col-span-3">
-            <a href="" class="btn btn-block btn-secondary">
-              <span>Zum Start der Doku</span>
-            </a>
+          <span>|</span>
+          <div class="version text-black">
+            Status: <span class="text-white">alpha</span>
           </div>
-        </section>
-        <section class="grid grid-cols-6 gap-3 max-w-md mx-auto">
-          <div class="col-span-6 mx-auto flex mt-6">
-            <img
-              alt="GitHub forks"
-              class="mx-6"
-              src="https://img.shields.io/github/forks/pocketstore-io/demo"
-            />
-            <img
-              class="mx-6"
-              src="https://img.shields.io/github/stars/pocketstore-io/demo"
-              alt=""
-            />
-          </div>
-        </section>
+        </div>
       </div>
-      <div class="col-span-6 md:col-span-3">
-        <div class="px-4 py-6 sm:pl-12 max-w-full sm:max-w-lg mx-auto">
-          <div class="flex flex-row items-center gap-x-6 mt-16 -mb-15">
-            <div
-              class="gopher w-16 h-16"
-              title="Gopher by @github:marcusolsson/gophers"
-            ></div>
-            <div class="version text-black">
-              PocketStore Version: <span class="text-white">v0.0.5</span>
-            </div>
-            <span>|</span>
-            <div class="version text-black">
-              Status: <span class="text-white">alpha</span>
-            </div>
+      <div
+        class="w-full shadow-2xl md:w-5/6 mx-auto subpixel-antialiased rounded pb-6 bg-black border-black mx-auto my-9"
+      >
+        <div
+          class="flex items-center h-6 rounded-t bg-gray-600 border-b border-gray-500 text-center text-white"
+          id="headerTerminal"
+        >
+          <div
+            class="flex ml-2 items-center text-center border-red-900 bg-red-500 shadow-inner rounded-full w-3 h-3"
+            id="closebtn"
+          ></div>
+          <div
+            class="ml-2 border-yellow-900 bg-yellow-500 shadow-inner rounded-full w-3 h-3"
+            id="minbtn"
+          ></div>
+          <div
+            class="ml-2 border-green-900 bg-green-500 shadow-inner rounded-full w-3 h-3"
+            id="maxbtn"
+          ></div>
+          <div class="mx-auto pr-16" id="terminaltitle">
+            <p class="text-center text-sm">Terminal</p>
           </div>
         </div>
         <div
-          class="w-full shadow-2xl md:w-5/6 mx-auto subpixel-antialiased rounded pb-6 bg-black border-black mx-auto my-9"
+          class="pl-1 pt-1 h-auto text-green-200 font-mono text-xs bg-black"
+          id="console"
         >
-          <div
-            class="flex items-center h-6 rounded-t bg-gray-600 border-b border-gray-500 text-center text-white"
-            id="headerTerminal"
-          >
-            <div
-              class="flex ml-2 items-center text-center border-red-900 bg-red-500 shadow-inner rounded-full w-3 h-3"
-              id="closebtn"
-            ></div>
-            <div
-              class="ml-2 border-yellow-900 bg-yellow-500 shadow-inner rounded-full w-3 h-3"
-              id="minbtn"
-            ></div>
-            <div
-              class="ml-2 border-green-900 bg-green-500 shadow-inner rounded-full w-3 h-3"
-              id="maxbtn"
-            ></div>
-            <div class="mx-auto pr-16" id="terminaltitle">
-              <p class="text-center text-sm">Terminal</p>
-            </div>
-          </div>
-          <div
-            class="pl-1 pt-1 h-auto text-green-200 font-mono text-xs bg-black"
-            id="console"
-          >
-            <p class="pb-1">
-              <span class="text-success">$jmartz</span> |
-              <span class="text-gray-300">/var/www </span> -
-              <span class="text-primary"
-                >git clone https://www.github.com/pocketstore-io/demo.git</span
-              >
-            </p>
-            <p class="pb-1">
-              <span class="text-success">$jmartz</span> |
-              <span class="text-gray-300">/var/www </span> -
-              <span class="text-primary">cd demo</span>
-            </p>
-            <p class="pb-1">
-              <span class="text-success">$jmartz</span> |
-              <span class="text-gray-300">/var/www/demo </span> -
-              <span class="text-primary">docker compose up -d</span>
-            </p>
-          </div>
+          <p class="pb-1">
+            <span class="text-success">$jmartz</span> |
+            <span class="text-gray-300">/var/www </span> -
+            <span class="text-primary"
+              >git clone https://www.github.com/pocketstore-io/demo.git</span
+            >
+          </p>
+          <p class="pb-1">
+            <span class="text-success">$jmartz</span> |
+            <span class="text-gray-300">/var/www </span> -
+            <span class="text-primary">cd demo</span>
+          </p>
+          <p class="pb-1">
+            <span class="text-success">$jmartz</span> |
+            <span class="text-gray-300">/var/www/demo </span> -
+            <span class="text-primary">docker compose up -d</span>
+          </p>
         </div>
       </div>
-    </section>
-
-    <section class="grid grid-cols-6 gap-3">
-      <div class="col-span-6 md:col-span-3">Hallo Welt</div>
-      <div class="col-span-6 md:col-span-3"></div>
-    </section>
-    Hallo Welt
-  </div>
+    </div>
+    <div class="col-span-6 md:col-span-2">
+      <img src="https://place-hold.it/1920x1080" alt="" />
+    </div>
+    <div class="col-span-6 md:col-span-2">
+      <img src="https://place-hold.it/1920x1080" alt="" />
+    </div>
+    <div class="col-span-6 md:col-span-2">
+      <img src="https://place-hold.it/1920x1080" alt="" />
+    </div>
+    <div class="col-span-6 md:col-span-3">
+      <contributor></contributor>
+      <repos />
+      <pocketbase-sdk />
+    </div>
+    <div class="col-span-6 md:col-span-3">
+      <github-version />
+      <commits />
+    </div>
+  </section>
 </template>
 
 <script setup lang="ts">
