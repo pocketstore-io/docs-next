@@ -1,16 +1,28 @@
 {
-  "name": "PocketStore.io",
+  "name": "PocketStore",
   "short_name": "PocketStore",
+  "description": "A modern, responsive Vue app for managing your pocket-sized store.",
   "start_url": "/",
   "display": "standalone",
-  "theme_color":"#1eadef",
-  "background_color": "#000",
-  "description": "PocketStore is a new Build Shop Software for smaller OnlineShops on top of PocketBase.io",
+  "background_color": "#1a202c",
+  "theme_color": "#1a202c",
+  "orientation": "any",
+  "dir": "ltr",
+  "lang": "en",
+  "form_factor": ["wide", "narrow"], 
+  "categories": ["productivity", "utilities", "shopping"],
+  "scope": "/",
+  "id": "/?source=pwa",
   "icons": [
     {
       "src": "/pocketstore-favicon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+  "screenshots": [],
+  "shortcuts": [],
+  "related_applications": [],
+  "prefer_related_applications": false
 }
