@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #1eadef;
+  --color-secondary: black;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "My Vue App",
+  "short_name": "VueApp",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "A Vue.js 3 PWA Example",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
