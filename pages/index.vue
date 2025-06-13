@@ -36,18 +36,17 @@
         </section>
       </div>
       <div class="col-span-6 md:col-span-3">
-        <div class="pt-6 pb-6 pl-12 max-w-lg">
-          <div class="flex justify-between items-center">
+        <div class="px-4 py-6 sm:pl-12 max-w-full sm:max-w-lg mx-auto">
+          <div class="flex flex-row items-center gap-x-6 mt-16 -mb-15">
             <div
-              class="gopher w-16 h-16 ml-auto -mb-15"
+              class="gopher w-16 h-16"
               title="Gopher by @github:marcusolsson/gophers"
             ></div>
-            <div class="version text-black pl-6 -mb-16">
-              PocketStore Version:
-              <span class="text-white"> v0.0.5 </span>
+            <div class="version text-black">
+              PocketStore Version: <span class="text-white">v0.0.5</span>
             </div>
-            <span class="-mb-16 mx-6"> |</span>
-            <div class="version text-black -mb-16 text-black">
+            <span>|</span>
+            <div class="version text-black">
               Status: <span class="text-white">alpha</span>
             </div>
           </div>
