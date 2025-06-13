@@ -7,12 +7,7 @@
   "description": "A Vue.js 3 PWA Example",
   "icons": [
     {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon-512.png",
+      "src": "/pocketstore-favicon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
