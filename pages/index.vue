@@ -36,7 +36,7 @@
     </div>
     <div class="col-span-6 md:col-span-3">
       <div class="px-4 py-6 sm:pl-12 max-w-full sm:max-w-lg mx-auto">
-        <div class="flex flex-row items-center gap-x-6 mt-16 -mb-15">
+        <div class="flex flex-row items-center gap-x-6 md:mt-16 -mb-16">
           <div
             class="gopher w-16 h-16"
             title="Gopher by @github:marcusolsson/gophers"
