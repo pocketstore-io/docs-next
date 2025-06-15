@@ -1,10 +1,9 @@
 <template>
   <div class="card card-side shadow-sm">
     <figure>
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-        alt="Movie"
-      />
+      <div class="w-32 h-64 bg-cover" style="background-image: url('https://avatars.githubusercontent.com/u/20771653?v=4')">
+
+      </div>
     </figure>
     <div class="card-body bg-white rounded-r-xl">
       <h2 class="card-title">New Version - {{ latest }}</h2>
@@ -21,11 +20,23 @@
 
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue'
-import {marked} from 'marked'
+import { useLocalStorage } from '@vueuse/core'
+import { marked } from 'marked'
+
+const owner = "pocketstore-io"
+const repo = "demo"
+const CACHE_KEY = `latest-release:${owner}:${repo}`
 
 const latest = ref("0.0.1")
 const hash = ref("")
 const releaseNotes = ref("")
+
+const cache = useLocalStorage<{
+  latest: string
+  hash: string
+  releaseNotes: string
+  cachedAt: number
+} | null>(CACHE_KEY, null)
 
 async function getLatestTagAndRelease(owner: string, repo: string) {
   // 1. Fetch the latest tag
@@ -48,12 +59,30 @@ async function getLatestTagAndRelease(owner: string, repo: string) {
   }
   const release = await releaseResponse.json()
   releaseNotes.value = release.body || '(No notes in this release)'
+
+  // 3. Cache the result with timestamp
+  cache.value = {
+    latest: latest.value,
+    hash: hash.value,
+    releaseNotes: releaseNotes.value,
+    cachedAt: Date.now()
+  }
+}
+
+function isCacheValid(cached: typeof cache.value) {
+  if (!cached) return false
+  // One day = 24h * 60m * 60s * 1000ms
+  const oneDayMs = 24 * 60 * 60 * 1000
+  return (Date.now() - cached.cachedAt) < oneDayMs
 }
 
 onMounted(async () => {
-  await getLatestTagAndRelease("pocketstore-io", "demo")
+  if (isCacheValid(cache.value)) {
+    latest.value = cache.value!.latest
+    hash.value = cache.value!.hash
+    releaseNotes.value = cache.value!.releaseNotes
+  } else {
+    await getLatestTagAndRelease(owner, repo)
+  }
 })
 </script>
-
-<style>
-</style>
