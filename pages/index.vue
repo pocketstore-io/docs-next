@@ -1,6 +1,16 @@
 <template>
   <section class="grid grid-cols-6 gap-3">
     <div class="col-span-6 md:col-span-3">
+      <section class="alert alert-warning flex justify-center">
+        <p class="flex items-center justify-between">
+          <font-awesome-icon size="2x" color="white" :icon="faInfoCircle" />
+          <span class="block text-center mx-3"
+            >This is a independent Software made by Jonathan Martz, not related
+            to <a href="https://pocketbase.io" class="text-red-600">PocketBase.io</a></span
+          >
+          <font-awesome-icon size="2x" color="white" :icon="faInfoCircle" />
+        </p>
+      </section>
       <img
         class="w-full h-16 mb-6 mt-16"
         src="https://www.pocketstore.io/pocketstore-logo-white.svg"
@@ -8,13 +18,17 @@
       />
       <section class="grid grid-cols-6 gap-3 max-w-md mx-auto">
         <div class="col-span-6 md:col-span-3">
-          <a href="" class="btn btn-block btn-primary">
+          <a
+            href="https://www.github.com/pocketstore-io/demo"
+            target="_blank"
+            class="btn btn-block btn-primary"
+          >
             <font-awesome-icon :icon="faGithub" />
             <span class="text-sm">Schaue dir den Code an</span>
           </a>
         </div>
         <div class="col-span-6 md:col-span-3">
-          <a href="" class="btn btn-block btn-secondary">
+          <a href="/page/requirements" class="btn btn-block btn-secondary">
             <span>Zum Start der Doku</span>
           </a>
         </div>
@@ -120,6 +134,7 @@
 
 <script setup lang="ts">
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 useHead({
