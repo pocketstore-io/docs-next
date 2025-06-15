@@ -1,10 +1,10 @@
 {
-  "name": "PocketStore",
-  "short_name": "PocketStore",
+  "name": "Docs - PocketStore",
+  "short_name": "Docs - PocketStore",
   "description": "A modern, responsive Vue app for managing your pocket-sized store.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#1a202c",
+  "background_color": "#000000",
   "theme_color": "#1a202c",
   "orientation": "any",
   "dir": "ltr",

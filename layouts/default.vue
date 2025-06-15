@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gray-400">
+  <section data-theme="light" class="bg-gray-400">
     <header class="bg-black text-white px-3 py-3">
       <section class="mx-auto max-w-6xl flex justify-between px-3">
         <section class="logo">
