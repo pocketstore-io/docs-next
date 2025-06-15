@@ -12,7 +12,7 @@
         </p>
       </section>
       <img
-        class="w-full h-16 mb-6 mt-16"
+        class="w-full h-16 mb-6 mt-8"
         src="https://www.pocketstore.io/pocketstore-logo-white.svg"
         alt=""
       />
