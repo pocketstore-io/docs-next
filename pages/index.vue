@@ -143,7 +143,8 @@ useHead({
     {
       name: "description",
       content:
-        "PocketStore is a new Build Shop Software for smaller OnlineShops on top of PocketBase.io",
+        "PocketStore is a new Build Shop Software for smaller OnlineShops on top of PocketBase.io "+
+        "This System is not related to PocketBase.io, its independent Project by JMSE. ",
     },
   ],
 });
