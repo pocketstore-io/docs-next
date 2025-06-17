@@ -6,7 +6,7 @@
   />
 
   <section class="markdown grid grid-cols-6">
-    <div v-for="block in blocks" class="page col-span-6 sm:col-span-3 lg:col-span-2">
+    <div v-for="block in blocks" class="page col-span-6 sm:col-span-3">
       <div class="prose px-3 py-3" v-html="marked(block)" />
     </div>
   </section>

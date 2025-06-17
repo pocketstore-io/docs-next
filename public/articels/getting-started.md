@@ -13,7 +13,7 @@
 <small>
 Go into Storefront Folder and execute <br> <b>go run bin/lang.go</b><br>
 After that do <b>bun run build again</b> <br>
-And Restart Container
+And <b>Restart Container</b>
 </small>
 
 <hr style="border: 1px solid #1eadef;margin: 1rem 0">
