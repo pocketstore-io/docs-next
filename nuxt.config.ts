@@ -4,17 +4,13 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: false },
   css: ['~/tailwind.css'],
-
   plausible: {
     // Prevent tracking on localhost
-    ignoredHostnames: [],
+    ignoredHostnames: ['localhost'],
   },
-
   vite: {
     plugins: [
       tailwindcss(),
     ],
   },
-
-  modules: ['@nuxtjs/plausible'],
 })
