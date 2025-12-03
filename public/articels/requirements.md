@@ -5,14 +5,27 @@
     source ~/.bashrc
     nvm install --lts
 
-### Bun install
-    npm i -g bun
-
-### Pm2 install
-    npm i -g pm2
+### Npm install global
+    npm i -g pm2 bun npm
 
 ### Snap install
     apt-get install snapd
 
 ### Go install
     snap install go --classic
+
+### Certbot install
+    snap install certbot --classic
+
+---
+
+**Ports and Names**
+
+#### .env
+
+```
+CONTAINER_NUXT=nuxt_test
+PORT_NUXT=8080
+CONTAINER_POCKETBASE=pb_test
+PORT_POCKETBASE=8090
+```

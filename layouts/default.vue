@@ -20,20 +20,27 @@
       </section>
     </header>
     <section v-if="open" class="mobile-nav py-2 px-3 bg-gray-600 mx-auto max-w-6xl">
-      <section class="grid grid-cols-6 gap-3">
-        <div class="col-span-3 md:col-span-2">
+      <section class="grid grid-cols-8 gap-3">
+        <div class="col-span-4 md:col-span-2">
           <a href="/page/requirements" class="btn btn-primary btn-block btn-sm"
             >Requirements</a
           >
         </div>
-        <div class="col-span-3 md:col-span-2">
+        <div class="col-span-4 md:col-span-2">
           <a
-            href="/page/getting-started"
-            class="btn btn-primary btn-block btn-sm"
-            >Getting Started</a
+              href="/page/plugins"
+              class="btn btn-primary btn-block btn-sm"
+          >Plugins</a
           >
         </div>
-        <div class="col-span-3 md:col-span-2">
+        <div class="col-span-4 md:col-span-2">
+          <a
+            href="/page/scripts"
+            class="btn btn-primary btn-block btn-sm"
+            >scripts</a
+          >
+        </div>
+        <div class="col-span-4 md:col-span-2">
           <a
             href="/page/nginx-proxy"
             class="btn btn-primary btn-block btn-sm"
