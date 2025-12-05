@@ -37,8 +37,8 @@ go run bin/plugins.go
 go run bin/translations.go
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
-nvm install --lts
 source ~/.bashrc
+nvm install --lts
 npm i -g npm bun pm2
 
 cd storefront && bun install && go run bin/sitemap.go && bun run build
