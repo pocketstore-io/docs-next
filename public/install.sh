@@ -29,6 +29,8 @@ fi
 
 cd /var/www/demo || { echo "❌ Failed to enter project directory."; exit 1; }
 
+cp .env.example .env
+
 # Start Docker containers
 echo "🚀 Starting Docker containers..."
 docker compose up
