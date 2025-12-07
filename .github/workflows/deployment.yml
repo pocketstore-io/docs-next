@@ -1,0 +1,20 @@
+name: Remote SSH Command
+on: [push]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute remote SSH commands using password
+        uses: appleboy/ssh-action@v1
+        with:
+          host: www.pocketstore.io
+          username: root
+          key: ${{ secrets.SSH_KEY }}
+          port: 22
+          script: |
+            cd /var/www/docs
+            git pull
+            bun install
+            bun run build
+            pm2 restart ecosystem.config.cjs
