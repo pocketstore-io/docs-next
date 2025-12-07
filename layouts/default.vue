@@ -20,31 +20,43 @@
       </section>
     </header>
     <section v-if="open" class="mobile-nav py-2 px-3 bg-gray-600 mx-auto max-w-6xl">
-      <section class="grid grid-cols-8 gap-3">
-        <div class="col-span-4 md:col-span-2">
+      <section class="grid grid-cols-10 gap-3">
+        <div class="col-span-5 md:col-span-2">
           <a href="/page/requirements" class="btn btn-primary btn-block btn-sm"
             >Requirements</a
           >
         </div>
-        <div class="col-span-4 md:col-span-2">
+        <div class="col-span-5 md:col-span-2">
+          <a href="/page/install" class="btn btn-primary btn-block btn-sm"
+          >Installation</a
+          >
+        </div>
+        <div class="col-span-5 md:col-span-2">
           <a
               href="/page/plugins"
               class="btn btn-primary btn-block btn-sm"
           >Plugins</a
           >
         </div>
-        <div class="col-span-4 md:col-span-2">
+        <div class="col-span-5 md:col-span-2">
           <a
             href="/page/binaries"
             class="btn btn-primary btn-block btn-sm"
             >Biniaries</a
           >
         </div>
-        <div class="col-span-4 md:col-span-2">
+        <div class="col-span-5 md:col-span-2">
           <a
             href="/page/nginx-proxy"
             class="btn btn-primary btn-block btn-sm"
             >Nginx Proxy</a
+          >
+        </div>
+        <div class="col-span-5 md:col-span-2">
+          <a
+              href="/page/integrations"
+              class="btn btn-primary btn-block btn-sm"
+          >Integrations</a
           >
         </div>
       </section>

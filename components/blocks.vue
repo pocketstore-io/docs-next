@@ -1,7 +1,7 @@
 <template>
   <img
     class="w-full h-16"
-    src="https://www.pocketstore.io/pocketstore-logo.svg"
+    src="https://www.pocketstore.io/pocketstore-logo-white.svg"
     alt=""
   />
 
