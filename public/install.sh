@@ -31,6 +31,8 @@ cd /var/www/demo || { echo "❌ Failed to enter project directory."; exit 1; }
 
 cp .env.example .env
 
+snap install go --classic
+
 go run bin/update.go
 go run bin/custom.go
 go run bin/plugins.go
