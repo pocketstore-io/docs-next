@@ -17,4 +17,4 @@ jobs:
             git pull
             bun install
             bun run build
-            pm2 restart ecosystem.config.cjs
+            bun x pm2 restart ecosystem.config.cjs
