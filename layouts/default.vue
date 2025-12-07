@@ -35,9 +35,9 @@
         </div>
         <div class="col-span-4 md:col-span-2">
           <a
-            href="/page/scripts"
+            href="/page/binaries"
             class="btn btn-primary btn-block btn-sm"
-            >scripts</a
+            >Biniaries</a
           >
         </div>
         <div class="col-span-4 md:col-span-2">

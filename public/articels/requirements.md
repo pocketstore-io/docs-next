@@ -19,6 +19,9 @@
 
 ---
 
+### Docker + Compose
+[Zur Documenation von Docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
+
 **Ports and Names**
 
 #### .env
