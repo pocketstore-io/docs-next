@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt update && apt upgrade -y && apt dist-upgrade -y
+
 # Check if Docker is installed
 if ! command -v docker &> /dev/null
 then
