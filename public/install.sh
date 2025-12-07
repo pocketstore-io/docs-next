@@ -34,6 +34,8 @@ cp .env.example .env
 go run bin/update.go
 go run bin/custom.go
 go run bin/plugins.go
+go run bin/plugins.go
+go run bin/requirements.go
 go run bin/translations.go
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash && source ~/.bashrc && nvm install --lts
