@@ -56,7 +56,7 @@
             title="Gopher by @github:marcusolsson/gophers"
           ></div>
           <div class="version text-black">
-            PocketStore Version: <span class="text-white">v0.0.6</span>
+            PocketStore Version: <span class="text-white">v0.0.7</span>
           </div>
           <span>|</span>
           <div class="version text-black">
